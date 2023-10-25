@@ -1,0 +1,170 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">CNS</div>
+        <ul class="nav-links">
+            <input type="checkbox" id="checkbox_toggle">
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <div class="menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="/">Wagenpark</a></li>
+                <li><a href="/">Vacature</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </div>
+        </ul>
+    </nav>
+    <!-- Swiper -->
+    <div class="wrapper-container">
+        <div class="arrow l" onclick="prev()">
+            <img src="images/l.png" alt="l">
+        </div>
+        <div class="slide slide-1">
+            <div class="caption">
+                <h3>CNS CAPTION 1</h3>
+                <p>Tekst 1</p>
+            </div>
+        </div>
+        <div class="slide slide-2">
+            <div class="caption">
+                <h3>CNS CAPTION 2</h3>
+                <p>Tekst 2</p>
+            </div>
+        </div>
+        <div class="slide slide-3">
+            <div class="caption">
+                <h3>CNS CAPTION 3</h3>
+                <p>Tekst 3</p>
+            </div>
+        </div>
+        <div class="arrow r" onclick="next()">
+            <img src="images/r.png" alt="r">
+        </div>
+    </div>
+    <!-- Cards -->
+    <div class="cards-container">
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">CNS Kaart 1</div>
+                <div class="card-back">Achterkant</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">CNS Kaart 2</div>
+                <div class="card-back">Achterkant</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">CNS Kaart 3</div>
+                <div class="card-back">Achterkant</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">CNS Kaart 4</div>
+                <div class="card-back">Achterkant</div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- About Us -->
+    <section class="about-us">
+        <div class="a-container">
+            <div class="a-text">
+                <h1>Over Ons</h1>
+                <p>Als Takeldienst zijn wij gespecialiseerd in het takelen en bergen van personenwagens, vrachtwagens en
+                    touringcars.
+
+                    Ons hoofdkantoor is gevestigd in Lier, Mallekotstraat 42 en een depot te Berlaar, Bastijnstraat 25.
+                    Gesitueerd aan de R16 , N10 en op nog geen 10 minuten van de op- en afrit: nr. 19 - E313/E34</p>
+                <button class="grow_skew_forward" onclick="location.href='contact.html'">Maak een afspraak</button>
+            </div>
+            <img src="images/2.jpg">
+
+        </div>
+    </section>
+    <!-- Advantages -->
+    <section class="advantages">
+        <div class="a-container">
+            <img src="images/3.jpg">
+            <div class="a-text">
+                <h1>Onze Voordelen</h1>
+                <ul>
+                    <li> <i class="fas fa-check-circle fasfa"></i>
+                        Snelheid van handelen</li>
+                    <li> <i class="fas fa-check-circle fasfa"></i>
+                        Steunpunten in talrijke Europese landen.</li>
+                    <li> <i class="fas fa-check-circle fasfa"></i>
+                        Diverse manieren van transport.</li>
+                    <li> <i class="fas fa-check-circle fasfa"></i>
+                        Ruime vervoerscapaciteit.</li>
+                    <li> <i class="fas fa-check-circle fasfa"></i>
+                        Reparaties ter plaatse mogelijk door goed geschoold en praktijk gevormd personeel.</li>
+                    <li> <i class="fas fa-check-circle fasfa"></i>
+                        Schadebeperking door technische deskundigheid op het gebied van specifieke bergingsmethoden.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h4>Bedrijf</h4>
+                    <ul>
+                        <li><a href="#">Wagenpark</a></li>
+                        <li><a href="#">Takelmeester</a></li>
+                        <li><a href="#">Waarom CNS</a></li>
+                        <li><a href="#">Vacature</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Nuttige informatie</h4>
+                    <ul>
+                        <li><a href="#">Verkeersinformatie</a></li>
+                        <li><a href="#">Truck Assistence</a></li>
+                        <li><a href="#">Truck Depannage</a></li>
+                        <li><a href="#">Depannage Lier</a></li>
+                        <li><a href="#">Buienradar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contactgegevens</h4>
+                    <ul>
+                        <li><a href="#">Mallekotstraat 42, B-2500 Lier</a></li>
+                        <li><a href="#">Tel: +32 3 482 28 10</a></li>
+                        <li><a href="#">Fax: +32 3 484 50 33</a></li>
+                        <li><a href="#">Mail: info@cnstakeldienst.be</a></li>
+                        <li><a href="#">BTW: BE 0501.920.164</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
