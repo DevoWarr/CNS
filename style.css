@@ -1,6 +1,7 @@
 :root {
     --grey: #19191A;
     --yellow: #F9BF20;
+    --blue: #205c94;
 }
 
 * {
@@ -114,6 +115,10 @@ input[type=checkbox] {
     user-select: none;
 }
 
+.logo img {
+    width: 150px;
+}
+
 @media (max-width: 768px) {
     .menu {
         display: none;
@@ -150,35 +155,27 @@ input[type=checkbox] {
     background: #aad5f6;
 }
 
-.slide-1 {
-    background: url('../images/1.jpg');
-}
-
-.slide-2 {
-    background: url('../images/2.jpg');
-}
-
-.slide-3 {
-    background: url('../images/3.jpg');
-}
-
-.slide {
+.slide-background {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
     background-size: cover;
     background-position: center;
-    position: relative;
-    overflow-x: hidden;
-    opacity: 0;
-    transition: 0.4s ease;
-}
+    transition: background-image 1s ease-in-out; /* Add a transition effect */
+  }
+  
 
 .caption {
-    background: rgba(0, 0, 0, 0.03);
-    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    width: 50%;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding: 40px 0px;
 }
 
@@ -187,17 +184,25 @@ input[type=checkbox] {
 }
 
 .caption h3 {
-    color: #fff;
+    color: var(--blue);
     text-align: center;
     font-size: 50px;
+    -webkit-text-stroke: 1px #fff;
     padding: 18px;
+}
+
+.caption h1 {
+    color: var(--yellow);
+    -webkit-text-stroke: 1px #fff;
+    text-align: center;
+    font-size: 55px;
 }
 
 .caption p {
     max-width: 600px;
     width: 90%;
     margin: 0px auto;
-    color: #ccc;
+    color: #fff;
     text-align: center;
     font-size: 18px;
     line-height: 1.5em;
@@ -243,7 +248,7 @@ input[type=checkbox] {
 .card {
     width: 250px;
     height: 100%;
-    margin: 20px;
+    margin: 18px;
     transform-style: preserve-3d;
     transition: all 0.5s ease;
 }
@@ -274,6 +279,10 @@ input[type=checkbox] {
 
 .card-front {
     background-color: #ffc728;
+}
+
+.card-front img {
+    width: 60px;
 }
 
 .card-back {
