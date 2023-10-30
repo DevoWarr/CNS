@@ -166,28 +166,28 @@ input[type=checkbox] {
     background-size: cover;
     background-position: center;
     transition: background-image 1s ease-in-out;
-    /* Add a transition effect */
 }
-
 
 .caption {
     background: rgba(0, 0, 0, 0.5);
-    width: 50%;
+    width: 100%;
+    max-width: 800px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 40px 0px;
+    padding: 20px;
 }
 
 .caption button {
     display: flex;
+    justify-content: center;
 }
 
 .caption h3 {
     color: var(--blue);
     text-align: center;
-    font-size: 50px;
+    font-size: 3.5vw;
     -webkit-text-stroke: 1px #fff;
     padding: 18px;
 }
@@ -196,62 +196,66 @@ input[type=checkbox] {
     color: var(--yellow);
     -webkit-text-stroke: 1px #fff;
     text-align: center;
-    font-size: 55px;
+    font-size: 4vw;
 }
 
 .caption p {
-    max-width: 600px;
-    width: 90%;
-    margin: 0px auto;
+    max-width: 90%;
+    margin: 10px auto;
     color: #fff;
     text-align: center;
-    font-size: 18px;
+    font-size: 2vw;
     line-height: 1.5em;
 }
 
-.arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    z-index: 100;
-    background: rgba(0, 0, 0, .1);
-    border-radius: 50%;
-    transform: background 500ms;
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+    .caption {
+        width: 90%;
+    }
+
+    .caption h3 {
+        font-size: 6vw;
+    }
+
+    .caption h1 {
+        font-size: 7vw;
+    }
+
+    .caption p {
+        font-size: 4vw;
+    }
 }
 
-.arrow img {
-    width: 50px;
-}
-
-.arrow:hover {
-    background: rgba(0, 0, 0, .4);
-}
-
-.l {
-    left: 10px;
-}
-
-.r {
-    right: 10px;
-}
 
 /* Cards */
 .cards-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 320px;
+    flex-wrap: wrap; /* New property to allow cards to wrap */
+    height: auto; /* Change height to auto for responsiveness */
     margin: 75px 0;
 }
 
 .card {
     width: 250px;
-    height: 100%;
+    height: 300px; /* Adjust the height based on your design */
     margin: 18px;
     transform-style: preserve-3d;
     transition: all 0.5s ease;
+}
+
+@media only screen and (max-width: 768px) {
+    /* Adjust the layout for smaller screens */
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%; /* Adjust the width for smaller screens */
+    }
 }
 
 .card-inner {
@@ -291,6 +295,7 @@ input[type=checkbox] {
     color: var(--yellow);
     transform: rotateY(180deg);
 }
+
 
 /* Advantages */
 .about-us {
