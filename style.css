@@ -365,8 +365,9 @@ input[type=checkbox] {
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 .footer-container {
-    max-width: 1170px;
-    margin: auto;
+    max-width: calc(100% - 200px);
+    margin: 0 85px;
+    width: 100%;
 }
 
 .footer-row {
@@ -454,6 +455,10 @@ input[type=checkbox] {
 }
 
 @media(max-width: 574px) {
+    .footer-container {
+        margin: 0;
+    }
+    
     .footer-col {
         width: 100%;
     }
